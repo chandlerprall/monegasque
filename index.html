@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monégasque</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            html, body {
+                margin: 0;
+                height: 100%;
+            }
+            #container {
+                width: 100%;
+                height: 100%;
+            }
+
+            .widget {
+                margin: 0;
+                padding: 0;
+                background: rgba(200, 200, 255, 0.5);
+                pointer-events: none;
+
+                /* Copied from monaco's applied text styles */
+                font-family: Menlo, Monaco, "Courier New", monospace;
+                font-weight: normal;
+                font-size: 12px;
+                font-feature-settings: "liga" 0, "calt" 0;
+                line-height: 18px;
+                letter-spacing: 0;
+                /* End copy */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script type="text/javascript" src="./dist/app.js"></script>
+    </body>
+</html>
